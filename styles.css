@@ -1,0 +1,187 @@
+/*
+
+Center the section child elements via margin auto
+
+*/
+
+
+/* GENERAL */
+* {
+    margin: 0;
+}
+
+header, .one, footer {
+    background-color: #1f2937;
+}
+
+.header, .one, .hero-content, .sign-up, .portrait-content, .call-to-action {
+    display: flex;
+}
+
+
+header > *, section > *, footer * {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 30px;
+}
+
+
+.two *, footer {
+    text-align: center;
+}
+
+button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+}
+
+/* header and box one style */
+header {
+    padding: 15px;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a, .one p{
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero-content {
+    margin: 70px auto;
+}
+
+.hero-content > * {
+    width: 50%;
+}
+
+.sign-up {
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.sign-up h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+}
+
+.sign-up p {
+    margin: 10px 0;
+    width: 90%;
+}
+
+.hero-content img {
+    background-color: #75777b;
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+h1 {
+    font: bold 48px #f9faf8;
+}
+
+/* box two */
+.two {
+    padding: 50px 0;
+}
+
+.two h1 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.portrait-box {
+    height: 200px;
+}
+
+.illustration {
+    margin: 0 auto;
+    background-color: #75777b;
+    height: 70%;
+    width: 70%;
+    border: 3px blue solid;
+    border-radius: 7px;
+}
+
+.portrait-box p {
+    margin: 10px auto;
+    width: 70%;
+}
+
+/*box three*/
+.three {
+    background-color: #e5e7eb;
+    padding: 100px 0;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+    color: #1f2937;
+    text-align: left;
+}
+
+.quoter {
+    text-align: right;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+/*box four*/
+.four {
+    padding: 70px 0;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 25px 70px;
+}
+
+.four h1, .four p {
+    color: #e5e7eb;
+}
+
+.four button {
+    border: 3px #e5e7eb solid;
+}
+
+
+/*footer*/
+footer {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+footer > * {
+    color: #f9faf8;
+}
